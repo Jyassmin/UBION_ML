@@ -5,7 +5,7 @@ import sys
 class UI(QtWidgets.QMainWindow):
     def __init__(self):
         super(UI, self).__init__()
-        uic.loadUi('unicodes/mainwindow_basic.ui', self)
+        uic.loadUi('uifiles/mainwindow_basic.ui', self)
         
         self.label_1 = self.findChild(QtWidgets.QLabel, "label")
         self.button_1 = self.findChild(QtWidgets.QPushButton, "pushButton")
