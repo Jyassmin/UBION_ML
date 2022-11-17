@@ -10,7 +10,7 @@ class DataFrameModel(QtCore.QAbstractTableModel):
     DtypeRole = QtCore.Qt.UserRole + 1000
     ValueRole = QtCore.Qt.UserRole + 1001
 
-    def __init__(self, df=pd.DataFrame(), parent=None):
+    def __init__(self, df=pd.DataFrame(), parent=None): # df 기본값이 지정이 아니면, 호출할 때 꼭 인자값을 넣어줘야함 (웬만하면 기본값을 넣어줘야 좋음)
         super(DataFrameModel, self).__init__(parent)
         self._dataframe = df
 
